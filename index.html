@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/lib/bootstrap.css">
+    <link rel="stylesheet" href="./css/pages/index.css">
+</head>
+
+<body>
+    <!-- 首页头部 -->
+    <div class="m-top">
+        <h1 class="header-log fl">
+        </h1>
+        <div class="load-app fr"></div>
+    </div>
+    <!-- 搜索功能 -->
+    <div class="m-search">
+        <input type="text" placeholder="请输入商品">
+        <input type="button" value="搜索">
+    </div>
+
+    <!-- 内容 -->
+    <div class="content">
+        <!-- 导航 -->
+        <div class="m-nav">
+            <ul class="nav clearfix">
+
+            </ul>
+        </div>
+        <!-- 超值折扣推荐 -->
+        <div class="discount-goods">
+            <div class="discount">
+                <h2>超值折扣推荐</h2>
+                <a href="#"></a>
+            </div>
+            <div class="goods">
+                <ul id="goodsAll">
+
+                </ul>
+            </div>
+            <!-- 更多优惠 -->
+            <div class="more">更多优惠》</div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <div class="footer">
+        <!-- <div class="discount">
+            <h2>品牌排行</h2>
+            <a href="#"></a>
+        </div> -->
+        <ul>
+            <li>
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#">返回顶部</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script type="text/html" id="goodsTpl">
+   {{each data as value index}}
+   <li>
+        <a href="#" class="clearfix">
+                {{value.productImgSm}}
+            <div class="title">
+               {{value.productName}}
+                <span class="price">{{value.productPinkage}}</span>
+            </div>
+            <p>
+                <span>{{value.productFrom}}|10-25 14：10</span>
+                <span>++</span>
+            </p>
+        </a>
+    </li>
+   {{/each}}
+</script>
+<script src="./js/lib/require.js"></script>
+<script src="./config.js"></script>
+<!-- <script src="./js/lib/template-web.js"></script> -->
+<script src="./js/pages/index.js"></script>

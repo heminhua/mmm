@@ -1,0 +1,78 @@
+@import '../base/base.less';
+@import '../base/common.less';
+
+
+// 内容
+.content {
+   
+    /* 导航菜单 */
+    .m-nav {
+        ul {
+            li {
+                float: left;
+                width: 25%;
+                text-align: center;
+                margin-bottom: 5px;
+                img {
+                    width: 40%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    /* 超值折扣推荐 */
+    .discount-goods {
+        /* title */
+        .discount {
+            height: 30px;
+            background: #ff9f23;
+            padding: 0 12px;
+            color: #fff;
+            position: relative;
+            margin-bottom: 10px;
+            h2 {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 30px;
+            }
+            a {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 12px;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                background: url('../../images/arrow-right.svg') no-repeat;
+            }
+        }
+        /* 内容 */
+        .goods {
+            padding: 0 12px;
+            ul {
+                li {
+                    border-bottom: 1px solid #ccc;
+                    padding-bottom: 10px;
+                    a {
+                        img {
+                            float: left;
+                            width: 80px;
+                            margin-right: 30px;
+                        }
+                        .title span {
+                            color: red;
+                        }
+                        p {
+                            line-height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+        .more {
+            height: 30px;
+            text-align: center;
+        }
+    }
+}
